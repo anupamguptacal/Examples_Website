@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> JS to change Attributes </title>
+		<script src="index.js"></script>
+		<link href = "../../prism.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<script src = "../../prism.js"></script>
+		<header>
+			<h1> CSE 154 Examples </h1>
+		</header>
+		<nav>
+			<div class="navbar">
+				<a href="../../index.html">Home</a>
+				<div class="dropdown">
+					<button class="dropbtn">DOM Manipulation Examples
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="../../What_JS_Can_do/Javascript_HTML_DOM_Events_Examples/onblur/index.html">DOM Events Example</a>
+						<a href="../../What_JS_Can_do/JS_to_change_Attributes/index.html">Changing Attributes</a>
+						<a href="../../What_JS_Can_do/JS_to_change_HTML/index.html">Changing Text</a>
+						<a href="../../What_JS_Can_do/JS_to_change_Styles/index.html">Dynamically Change Styles</a>
+						<a href="../../What_JS_Can_do/JS_to_Show_and_Hide_Elements/index.html">Show and Hide Elements</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">Javascript Debugging
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="../../JS_functions_syntax/Alert_Function/index.html">The Alert Function</a>
+						<a href="../../JS_functions_syntax/Logging_on_Console/index.html">Console.log</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">Array Functions
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="../../JS_functions_syntax/Array_Functions/join/index.html">Join</a>
+						<a href="../../JS_functions_syntax/Array_Functions/Merging_Arrays/index.html">Merging Arrays</a>
+						<a href="../../JS_functions_syntax/Array_Functions/Push_and_Pop/index.html">Push and Pop</a>
+						<a href="../../JS_functions_syntax/Array_Functions/shift_and_unshift/index.html">Shift and Unshift</a>
+						<a href="../../JS_functions_syntax/Array_Functions/toString/index.html">To String</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">String Functions
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="../../JS_functions_syntax/String_Operations/Case_Conversion/index.html">Case Conversion</a>
+						<a href="../../JS_functions_syntax/String_Operations/Extracting_Characters/index.html">Character Extraction</a>
+						<a href="../../JS_functions_syntax/String_Operations/Finding_the_Index_of_a_Substring/index.html">Finding the Index of a substring</a>
+						<a href="../../JS_functions_syntax/String_Operations/String_and_Number_Concatenation/index.html">String and Number Concatenation</a>
+						<a href="../../JS_functions_syntax/String_Operations/String_Concatenation/index.html">String Concatenation</a>
+						<a href="../../JS_functions_syntax/String_Operations/String_Extraction/index.html">String Extraction</a>
+						<a href="../../JS_functions_syntax/String_Operations/String_Length/index.html">String Length</a>
+						<a href="../../JS_functions_syntax/String_Operations/String_Replace/index.html">String Replace</a>
+						<a href="../../JS_functions_syntax/String_Operations/Trimming_Strings/index.html">Trimming Strings</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">Events
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="../../JS_functions_syntax/Events/What_is_an_Event/index.html"> What is an event? </a>
+						<a href="../../JS_functions_syntax/Events/addEventListener/index.html"> Adding Event Listeners </a>
+						<a href="../../JS_functions_syntax/Events/removeEventListener/index.html"> Removing Event Listeners </a>
+						<a href="../../JS_functions_syntax/Events/Types/index.html"> Types of Events </a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<h2>Using Javascript to Change Attributes of DOM Elements</h2>
+			<h4> Description : </h4>
+			<section id="description">
+				<p class="center"> Javascript can be used to change Attributes of DOM Elements. Attributes are
+					components of a DOM element that give it more meaning. For example, if we have an img tag : <br/><br/>
+					<code class="language-html"> &lt;img src="tree.jpg" alt="A tree!" /&gt; </code>,
+					the src and alt text components are attributes of the img DOM element.
+				</p>
+				<p class="center"> Javascript gives us the capability to access these DOM elements. Once we have access, we
+					can change the attributes as needed.
+				</p>
+			</section>
+			<section>
+				<h4> Example : </h4>
+				<div id="exercise">
+					<img id="dog" src="saddog.jpg" alt="Image showing a dog(sad)"><br/>
+					<button id="make-happy">Pet the dog!</button>
+					<button id="make-sad">Stop petting the dog!</button>
+					<p>
+						 In this case JavaScript, accesses the img DOM element when the button is clicked and
+						 changes the value of the src (source) attribute of an image. <br/> NOTE that in this case,
+						 we're not changing the img element. The img element remains the same and we're only
+						 changing the src attribute. Code for this can be found below:
+					 </p>
+				</div>
+				<pre>
+					<code class="language-js">
+						document.getElementById("dog").src = "changed_img.jpeg";
+					</code>
+				</pre>
+			<section>
+		</main>
+		<footer>
+      <p> I believe in you :) </p>
+    </footer>
+	</body>
+</html>

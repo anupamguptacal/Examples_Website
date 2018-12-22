@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Case Conversion</title>
+		<script src = "index.js"></script>
+		<link href = "../../../prism.css" rel="stylesheet">
+		<link href = "styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<script src = "../../../prism.js"></script>
+		<header>
+			<h1> CSE 154 Examples </h1>
+		</header>
+		<nav>
+			<div class="navbar">
+					<a href="../../../index.html">Home</a>
+					<div class="dropdown">
+						<button class="dropbtn">DOM Manipulation Examples
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../../What_JS_Can_do/Javascript_HTML_DOM_Events_Examples/onblur/index.html">DOM Events Example</a>
+							<a href="../../../What_JS_Can_do/JS_to_change_Attributes/index.html">Changing Attributes</a>
+							<a href="../../../What_JS_Can_do/JS_to_change_HTML/index.html">Changing Text</a>
+							<a href="../../../What_JS_Can_do/JS_to_change_Styles/index.html">Dynamically Change Styles</a>
+							<a href="../../../What_JS_Can_do/JS_to_Show_and_Hide_Elements/index.html">Show and Hide Elements</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Javascript Debugging
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../Alert_Function/index.html">The Alert Function</a>
+							<a href="../../Logging_on_Console/index.html">Console.log</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Array Functions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../Array_Functions/join/index.html">Join</a>
+							<a href="../../Array_Functions/Merging_Arrays/index.html">Merging Arrays</a>
+							<a href="../../Array_Functions/Push_and_Pop/index.html">Push and Pop</a>
+							<a href="../../Array_Functions/shift_and_unshift/index.html">Shift and Unshift</a>
+							<a href="../../Array_Functions/toString/index.html">To String</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">String Functions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../String_Operations/Case_Conversion/index.html">Case Conversion</a>
+							<a href="../../String_Operations/Extracting_Characters/index.html">Character Extraction</a>
+							<a href="../../String_Operations/Finding_the_Index_of_a_Substring/index.html">Finding the Index of a substring</a>
+							<a href="../../String_Operations/String_and_Number_Concatenation/index.html">String and Number Concatenation</a>
+							<a href="../../String_Operations/String_Concatenation/index.html">String Concatenation</a>
+							<a href="../../String_Operations/String_Extraction/index.html">String Extraction</a>
+							<a href="../../String_Operations/String_Length/index.html">String Length</a>
+							<a href="../../String_Operations/String_Replace/index.html">String Replace</a>
+							<a href="../../String_Operations/Trimming_Strings/index.html">Trimming Strings</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Events
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../Events/What_is_an_Event/index.html"> What is an event? </a>
+		          <a href="../../Events/addEventListener/index.html"> Adding Event Listeners </a>
+		          <a href="../../Events/removeEventListener/index.html"> Removing Event Listeners </a>
+		          <a href="../../Events/Types/index.html"> Types of Events </a>
+						</div>
+					</div>
+				</div>
+			</nav>
+      <main>
+				<h2>Changing the Casing of a String</h2>
+				<h4> Description : </h4>
+				<section id="description">
+	        <p class="center"> In Javascript, you can change all characters of a string to Upper Case using
+	          the toUpperCase() function and all characters to Lower Case using the toLowerCase() function. <br/>
+	          The original string remains unchanged and a new string is returned.
+					</p>
+					<div class="space" id="syntax">
+						<p> Syntax :
+							<code class="language-js syntax">
+									let changed_string = original_string.toUpperCase(); // Returns an uppercase copy of original_string
+							</code><br /> <br />
+							<code class="language-js syntax">
+									let changed_string = original_string.toLowerCase(); // Returns a lower case copy of original_string
+							</code>
+						</p>
+					</div>
+				</section>
+				<h4> Examples : </h4>
+
+        <section>
+             <pre>
+							 <code class="language-js">
+	               let str = "Cats are the best!";
+	               let replaced = str.toUpperCase();
+						 	</code>
+	               replaced = <span id="fillFirst"> ?? </span>
+             </pre>
+             <pre>
+							 <code class="language-js">
+	               let str = "WE WERE ON A BREAK!"
+	               let replaced = str.toLowerCase();
+							 </code>
+	               replaced = <span id="fillSecond"> ?? </span>
+             </pre>
+        </section>
+        <button id="resultShow">Click me to see what the result is! </button>
+      </main>
+			<footer>
+	      <p> I believe in you :) </p>
+	    </footer>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> The Remove Event Listener Function </title>
+    <script src = "index.js"></script>
+		<link href = "../../../prism.css" rel="stylesheet">
+		<link href = "styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src = "../../../prism.js"></script>
+		<header>
+			<h1> CSE 154 Examples </h1>
+		</header>
+    <nav>
+      <div class="navbar">
+        <a href="../../../index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">DOM Manipulation Examples
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../../../What_JS_Can_do/Javascript_HTML_DOM_Events_Examples/onblur/index.html">DOM Events Example</a>
+            <a href="../../../What_JS_Can_do/JS_to_change_Attributes/index.html">Changing Attributes</a>
+            <a href="../../../What_JS_Can_do/JS_to_change_HTML/index.html">Changing Text</a>
+            <a href="../../../What_JS_Can_do/JS_to_change_Styles/index.html">Dynamically Change Styles</a>
+            <a href="../../../What_JS_Can_do/JS_to_Show_and_Hide_Elements/index.html">Show and Hide Elements</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Javascript Debugging
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../../Alert_Function/index.html">The Alert Function</a>
+            <a href="../../Logging_on_Console/index.html">Console.log</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Array Functions
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../../Array_Functions/join/index.html">Join</a>
+            <a href="../../Array_Functions/Merging_Arrays/index.html">Merging Arrays</a>
+            <a href="../../Array_Functions/Push_and_Pop/index.html">Push and Pop</a>
+            <a href="../../Array_Functions/shift_and_unshift/index.html">Shift and Unshift</a>
+            <a href="../../Array_Functions/toString/index.html">To String</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">String Functions
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../../String_Operations/Case_Conversion/index.html">Case Conversion</a>
+            <a href="../../String_Operations/Extracting_Characters/index.html">Character Extraction</a>
+            <a href="../../String_Operations/Finding_the_Index_of_a_Substring/index.html">Finding the Index of a substring</a>
+            <a href="../../String_Operations/String_and_Number_Concatenation/index.html">String and Number Concatenation</a>
+            <a href="../../String_Operations/String_Concatenation/index.html">String Concatenation</a>
+            <a href="../../String_Operations/String_Extraction/index.html">String Extraction</a>
+            <a href="../../String_Operations/String_Length/index.html">String Length</a>
+            <a href="../../String_Operations/String_Replace/index.html">String Replace</a>
+            <a href="../../String_Operations/Trimming_Strings/index.html">Trimming Strings</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Events
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../../Events/What_is_an_Event/index.html"> What is an event? </a>
+            <a href="../../Events/addEventListener/index.html"> Adding Event Listeners </a>
+            <a href="../../Events/removeEventListener/index.html"> Removing Event Listeners </a>
+            <a href="../../Events/Types/index.html"> Types of Events </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h2> Remove Event Listener </h2>
+      <h4> Description : </h4>
+			<section id="description">
+        <p class="center">
+          The Remove Event Listener is used in Javascript to remove
+          event handlers from DOM elements. Any event can have multiple
+          event listeners so the remove event listener takes 2 arguments -
+          the event type and the function you want to remove from the list
+          of functions that were added to the event by addEventListener.
+        </p>
+        <div class="space" id="syntax">
+          <p> <strong> Syntax for removeEventListener: </strong></p>
+            <pre>
+              <code class="language-js">
+                let domElement = document.getElementById("some_id");
+                domElement.removeEventListener("event_name", function_to_NOT_call_anymore);
+              </code>
+            </pre>
+        </div>
+      </section>
+      <h4>Exercise : </h4>
+      <p id="exercise">
+        This is the code used for the button :
+        <code class="language-html">
+          &lt;button id="button-1"&gt; Change Picture &lt;/button&gt;
+        </code>
+        <button id ="button-1"> Change Picture </button><br/>
+        <img class="happy" id = "dog-img" src="happy.jpeg" alt="Dog photo"/>
+        Originally the "Change Picture" button on clicking changes the picture.
+        However we can remove the event listener quite easily. <br /><br />
+        Here's another button: <code class="language-html">
+          &lt;button id="button-2"&gt; Click to remove the Event Listener from Button-1 &lt;/button&gt;
+        </code>
+        <button id ="button-2"> Click to remove the Event Listener from Button-1 </button><br/>
+        Click on the second button to now remove the event listener from the "Change Picture" button. <br/><br/>
+        When the second button is clicked, we simply remove the changePicture function from the list of functions to call
+        in the even of a click on "button-1".<br/>
+        <code class="language-js">
+            let button = document.getElementById("button-1");
+        </code><br />
+        <code class="language-js">
+            button.removeEventListener("click", changePicture);
+        </code>
+      </p>
+    </main>
+    <footer>
+      <p> I believe in you :) </p>
+    </footer>
+  </body>
+</html>

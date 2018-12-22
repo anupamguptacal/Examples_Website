@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shift and Unshift</title>
+		<script src = "index.js"></script>
+		<link href = "../../../prism.css" rel="stylesheet">
+		<link href = "styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<script src = "../../../prism.js"></script>
+		<header>
+			<h1> CSE 154 Examples </h1>
+		</header>
+		<nav>
+			<div class="navbar">
+					<a href="../../../index.html">Home</a>
+					<div class="dropdown">
+						<button class="dropbtn">DOM Manipulation Examples
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../../What_JS_Can_do/Javascript_HTML_DOM_Events_Examples/onblur/index.html">DOM Events Example</a>
+							<a href="../../../What_JS_Can_do/JS_to_change_Attributes/index.html">Changing Attributes</a>
+							<a href="../../../What_JS_Can_do/JS_to_change_HTML/index.html">Changing Text</a>
+							<a href="../../../What_JS_Can_do/JS_to_change_Styles/index.html">Dynamically Change Styles</a>
+							<a href="../../../What_JS_Can_do/JS_to_Show_and_Hide_Elements/index.html">Show and Hide Elements</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Javascript Debugging
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../Alert_Function/index.html">The Alert Function</a>
+							<a href="../../Logging_on_Console/index.html">Console.log</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Array Functions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../join/index.html">Join</a>
+							<a href="../Merging_Arrays/index.html">Merging Arrays</a>
+							<a href="../Push_and_Pop/index.html">Push and Pop</a>
+							<a href="../shift_and_unshift/index.html">Shift and Unshift</a>
+							<a href="../toString/index.html">To String</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">String Functions
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../String_Operations/Case_Conversion/index.html">Case Conversion</a>
+							<a href="../../String_Operations/Extracting_Characters/index.html">Character Extraction</a>
+							<a href="../../String_Operations/Finding_the_Index_of_a_Substring/index.html">Finding the Index of a substring</a>
+							<a href="../../String_Operations/String_and_Number_Concatenation/index.html">String and Number Concatenation</a>
+							<a href="../../String_Operations/String_Concatenation/index.html">String Concatenation</a>
+							<a href="../../String_Operations/String_Extraction/index.html">String Extraction</a>
+							<a href="../../String_Operations/String_Length/index.html">String Length</a>
+							<a href="../../String_Operations/String_Replace/index.html">String Replace</a>
+							<a href="../../String_Operations/Trimming_Strings/index.html">Trimming Strings</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">Events
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="../../Events/What_is_an_Event/index.html"> What is an event? </a>
+		          <a href="../../Events/addEventListener/index.html"> Adding Event Listeners </a>
+		          <a href="../../Events/removeEventListener/index.html"> Removing Event Listeners </a>
+		          <a href="../../Events/Types/index.html"> Types of Events </a>
+						</div>
+					</div>
+			</div>
+
+      <main>
+				<h2>The Shift  and Unshift Functions</h2>
+				<h4> Description : </h4>
+				<section id="description">
+	        <p class="center"> Similar to the push and pop functions which add and remove elements from the end of an array,
+	          the shift and unshift functions allow you to add and remove elements from the front of an array.
+	          The unshift function can be used to push elements to the front of array while the shift function
+	          can be used to remove elements from the front of an array. The shift() function returns the
+	          element that was just deleted.
+					</p>
+					<div class="space" id="syntax">
+						<p> Syntax :
+								<code class="language-js syntax">
+										original_array.unshift("value1");
+								</code><br /><br />
+								<code class="language-js syntax">
+									original_array.shift();
+								</code>
+						</p>
+					</div>
+				</section>
+
+        <section>
+					<pre>
+							<input type="text" id="input-box" value="Samantha"> </input><button id = "unshift-element"> Unshift my name! </button>  <button id = "shift-unshift-element"> Shift a name! </button>
+						<code class="language-js">
+							let arr = ["Roger", "Patrick", "Teresa"];
+							arr.unshift("< value from input box >");
+						</code>
+							arr = <span id="fillFirst"> ?? </span>
+					</pre>
+
+					<pre>
+						<code class="language-js">
+							let arr = [1.3, 4.5, 6.5];
+							deteled = arr.shift();
+						</code>
+							<button id = "shift-element"> Shift the next element! </button>
+							arr = <span id="fillSecond"> ?? </span>
+							deleted = <span id="fill-third"> ?? </span>
+					</pre>
+        </section>
+        <button id="result-show">Click me to see what the result is! </button>
+      </main>
+			<footer>
+	      <p> I believe in you :) </p>
+	    </footer>
+	</body>
+</html>
