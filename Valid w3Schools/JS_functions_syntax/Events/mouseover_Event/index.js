@@ -4,7 +4,7 @@
   function initialize() {
     let div = document.getElementById("change-text");
     div.addEventListener("mouseover", changeText);
-    div.addEventListener("mouseout, changeText");
+    div.addEventListener("mouseout", changeText);
   }
 
   function changeText() {
